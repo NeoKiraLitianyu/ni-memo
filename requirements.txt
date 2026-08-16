@@ -1,0 +1,20 @@
+# ni-memo 运行时依赖
+# 安装: pip install -r requirements.txt
+#
+# 版本说明:
+# - python-docx 提供 DOCX 读写; lxml 为其内部依赖
+# - openpyxl 提供 XLSX 解析
+# - Pillow 提供图表 PNG 渲染
+# - pypdf 提供 PDF 文本提取
+# - matplotlib 可选: chart.py 需要, 无则图表区块降级
+#
+# 可选依赖(不装不影响核心功能):
+# - LibreOffice (含 uno): 仅用于 DOCX 域字段(TOC/页码)更新,
+#   缺失时自动降级为 PowerShell COM 或跳过, 不会崩溃
+
+python-docx>=1.1.0
+lxml>=4.9.0
+openpyxl>=3.1.0
+Pillow>=10.0.0
+pypdf>=4.0.0
+matplotlib>=3.8.0

@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# ni-memo runtime artifacts
+.ni-memo-work-*/
+ni_memo/__pycache__/
+
+# OS
+.DS_Store
+Thumbs.db
